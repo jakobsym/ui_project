@@ -1,6 +1,6 @@
 # ui_project
 
-setup project locally
+how to setup project locally
 - clone repo
 - cd twitch_app dir
 - npm i
