@@ -1,3 +1,13 @@
+import * as React from "react";
+import { createRoot } from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
+
+
 const LoginSidebar = () => {
     return (
         <>
@@ -10,9 +20,12 @@ const LoginSidebar = () => {
                 <div className='space-y-5'>
                     <h1 className="lg:text-3xl xl:text-5xl xl:leading-snug font-extrabold">Create an account to download your analytics!</h1>
                     <p className="text-lg">Dont have an account?</p>
-                    <button
-                        className="inline-block flex-none px-4 py-3 border-2 rounded-lg font-medium border-black bg-black text-white">Create
-                        account here</button>
+                    <Link to={"/register"}>
+                        <button
+                            className="inline-block flex-none px-4 py-3 border-2 rounded-lg font-medium border-black bg-black text-white">Create
+                            account here
+                        </button>
+                    </Link>
                 </div>
                 <p className="font-medium">©2024 ui project</p>
             </div>

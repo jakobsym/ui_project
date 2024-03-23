@@ -6,6 +6,7 @@ import App from './App.jsx'
 import LoginPage from './pages/LoginPage.jsx'
 import AnalyticPage from './pages/AnalyticPage.jsx'
 import ErrorPage from './pages/ErrorPage.jsx'
+import CreateAccount from './pages/CreateAccount.jsx'
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,11 @@ const router = createBrowserRouter([
   {
     path: '/analytics',
     element: <AnalyticPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/register',
+    element: <CreateAccount />,
     errorElement: <ErrorPage />,
   },
 ])
