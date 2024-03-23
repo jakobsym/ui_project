@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider} from 'react-router-dom' 
-import App from './App.jsx'
-import About from './pages/About.jsx'
 import './index.css'
-import Analytics from './pages/Analytics.jsx'
+import App from './App.jsx'
+import LoginPage from './pages/LoginPage.jsx'
+import AnalyticPage from './pages/AnalyticPage.jsx'
 import ErrorPage from './pages/ErrorPage.jsx'
 
 
@@ -15,13 +15,13 @@ const router = createBrowserRouter([
   errorElement: <ErrorPage />,
   },
   {
-    path: '/about',
-    element: <About />,
+    path: '/login',
+    element: <LoginPage />,
     errorElement: <ErrorPage />,
   },
   {
     path: '/analytics',
-    element: <Analytics />,
+    element: <AnalyticPage />,
     errorElement: <ErrorPage />,
   },
 ])
