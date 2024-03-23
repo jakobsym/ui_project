@@ -17,7 +17,6 @@ const LoginSidebar = () => {
                     {/* TODO: Have this send to landing or analytics page */}
                     <a href="#" className="font-medium text-xl text-white">Our Logo</a>
                 </div>
-                
                 <div className='space-y-5'>
                     <h1 className="lg:text-3xl xl:text-5xl xl:leading-snug font-extrabold">Create an account to download your analytics!</h1>
                       <p className="text-lg">Dont have an account?</p>
